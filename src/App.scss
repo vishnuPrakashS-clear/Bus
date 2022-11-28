@@ -1,7 +1,14 @@
 .App {
 	text-align: center;
 
-	button {
-		font-weight: bold;
-	}
+}
+
+.outerBox{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height:300px;
+	width:300px;
+	border-radius: 50%;
+	background-color: aquamarine;
 }
