@@ -3,21 +3,126 @@
 
 }
 
-.outerBox{
+.busBody {
 	position: absolute;
-	top: 10px;
-	left: 10px;
-	height:300px;
-	width:300px;
-	border-radius: 50px;
-	background-color: orange;
+	top: 70px;
+	left:100px;
+	height: 550px;
+	width: 1350px;
+	border-radius:50px;
+	background-color: wheat;
 }
 
-.innerBox {
+.tyre {
+	position:absolute;
+	top: 560px;
+	left:300px;
+	height:155px;
+	width:155px;
+	border-radius: 50%;
+	background-color: black;
+	border: 5px solid lightgrey;
+}
+
+.backTyre {
+	position:absolute;
+	top: 560px;
+	right:415px;
+	height:155px;
+	width:155px;
+	border-radius: 50%;
+	background-color: black;
+	border: 5px solid lightgrey;
+}
+
+.innerTyre {
 	position: absolute;
-	top: 75px;
-	left: 75px;
-	height:150px;
-	width:150px;
-	background-color: yellow;
+	top: 595px;
+	left: 330px;
+	height: 95px;
+	width:95px;
+	border-radius: 50%;
+	background-color: lightcyan;
+}
+
+.innerBackTyre {
+	position: absolute;
+	top: 595px;
+	left: 990px;
+	height: 95px;
+	width:95px;
+	border-radius: 50%;
+	background-color: lightcyan;
+}
+
+.door {
+	position:absolute;
+	top: 220px;
+	left:500px;
+	height:399px;
+	width:190px;
+	border-radius: 10px;
+	background-color:black;
+}
+
+.door1 {
+	position:absolute;
+	top: 229px;
+	left:510px;
+	height:388px;
+	width:82px;
+	border-radius: 10px;
+	background-color:whitesmoke;
+}
+
+.door2 {
+	position:absolute;
+	top: 229px;
+	left:600px;
+	height:388px;
+	width:82px;
+	border-radius: 10px;
+	background-color:whitesmoke;
+}
+
+.window {
+	position:absolute;
+	top: 80px;
+	left:730px;
+	height:110px;
+	width:190px;
+	border-radius: 10px;
+	background-color:lightcyan;
+}
+
+.window1 {
+	position:absolute;
+	top: 80px;
+	left:930px;
+	height:110px;
+	width:190px;
+	border-radius: 10px;
+	background-color:lightcyan;
+}
+
+.window2 {
+	position:absolute;
+	top: 80px;
+	left:1130px;
+	height:110px;
+	width:190px;
+	border-radius: 10px;
+	background-color:lightcyan;
+}
+
+.roof {
+	position: absolute;
+	border-radius: 50% 50% 0 0;
+	top: 40px;
+	height: 20px;
+	left: 130px;
+	width: 1280px;
+
+	background-color: whitesmoke;
+	border: 5px solid black;
 }
