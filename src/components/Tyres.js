@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const Window = ({ size, left, top }) =>
+const Tyres = ({ size, left, top }) =>
 	<div
 		style={ {
 			position: 'absolute',
@@ -9,7 +9,7 @@ const Window = ({ size, left, top }) =>
 			left: `${ left }px`,
 			top: `${ top }px`,
 		} }
-		className="window"
+		className="tyre"
 	/>;
 
-export default Window;
+export default Tyres;

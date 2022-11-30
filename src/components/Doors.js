@@ -4,6 +4,8 @@ const doorComponents = [
 	'mainDoor',
 	'leftGlass',
 	'rightGlass',
+	'luggageDoorFrame',
+	'luggageDoor',
 ];
 
 const Doors = () =>

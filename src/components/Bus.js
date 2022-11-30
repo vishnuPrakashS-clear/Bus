@@ -1,18 +1,18 @@
 import { React } from 'react';
 import BusBody from './BusBody';
-import Tyre from './Tyre';
+import Tyre from './BusTyres';
 import Doors from './Doors';
 import Windows from './Windows';
 import Roof from './Roof';
-import Luggage from './Luggage';
+import Glasses from './Glasses';
 
 const Bus = () => <div>
 	<BusBody/>
 	<Tyre/>
 	<Doors/>
+	<Glasses/>
 	<Windows/>
 	<Roof/>
-	<Luggage/>
 </div>;
 
 export default Bus;
