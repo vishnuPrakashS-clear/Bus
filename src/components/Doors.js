@@ -1,15 +1,9 @@
 import { React } from 'react';
+import InnerDoors from './InnerDoors';
 
-const doorComponents = [
-	'mainDoor',
-	'leftGlass',
-	'rightGlass',
-	'luggageDoorFrame',
-	'luggageDoor',
-];
-
-const Doors = () =>
-	doorComponents.map((door, key) =>
-		<div key={ key } className={ `${ door }` }/>);
+const Doors = () => <div>
+	<div className="mainDoor"/>
+	<InnerDoors/>
+</div>;
 
 export default Doors;

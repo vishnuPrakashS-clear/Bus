@@ -1,6 +1,6 @@
 import { React } from 'react';
 import BusBody from './BusBody';
-import Tyre from './BusTyres';
+import Tyre from './Tyre';
 import Doors from './Doors';
 import Windows from './Windows';
 import Roof from './Roof';

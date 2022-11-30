@@ -15,9 +15,15 @@
 }
 
 .tyre {
+	position:absolute;
 	border-radius: 50%;
-	background-color: black;
-	border: 5px solid lightgrey;
+	background-color: wheat;
+	border: 15px solid black;
+}
+
+.rim {
+	border: 5px dashed black;
+	border-radius: 50%;
 }
 
 .backTyre {
@@ -31,35 +37,17 @@
 	border: 5px solid lightgrey;
 }
 
-.innerFrontTyre {
-	position: absolute;
-	top: 595px;
-	left: 330px;
-	height: 95px;
-	width:95px;
-	border-radius: 50%;
-	background-color: lightcyan;
-}
 
-.innerBackTyre {
-	position: absolute;
-	top: 595px;
-	left: 990px;
-	height: 95px;
-	width:95px;
-	border-radius: 50%;
-	background-color: lightcyan;
-}
 .frontGlass{
 	position: absolute;
-	top: 80px;
-	left: 140px;
+	top: 70px;
+	left: 146px;
 	height: 250px;
 	width: 60px;
 	background-color: lightblue;
 	border-radius: 5px;
 	border: 1px solid black;
-	clip-path: polygon(75% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(65% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .mainDoor {
@@ -67,27 +55,12 @@
 	top: 280px;
 	left:500px;
 	height:329px;
-	width:190px;
+	width:183px;
 	border-radius: 10px;
 	background-color:black;
 }
 
 .leftGlass {
-	position:absolute;
-	top: 300px;
-	left:510px;
-	height:288px;
-	width:82px;
-	border-radius: 10px;
-	background-color:lightblue;
-}
-
-.rightGlass {
-	position:absolute;
-	top: 300px;
-	left:600px;
-	height:288px;
-	width:82px;
 	border-radius: 10px;
 	background-color:lightblue;
 }
@@ -97,8 +70,6 @@
 	 border-radius: 10px;
 	background-color:lightblue;
 }
-
-
 
 .roof {
 	position: absolute;
