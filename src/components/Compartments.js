@@ -1,8 +1,10 @@
 import { React } from 'react';
+import LuggageDoor from './LuggageDoor';
+import LuggageDoorFrame from './LuggageDoorFrame';
 
 const Compartment = () => <div>
-	<div className="luggageDoorFrame"/>
-	<div className="luggageDoor"/>
+	<LuggageDoor/>
+	<LuggageDoorFrame/>
 </div>;
 
 export default Compartment;

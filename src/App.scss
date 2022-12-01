@@ -1,16 +1,22 @@
 .App {
 	text-align: center;
+}
 
+
+.bus {
+	background-image: linear-gradient(yellowGreen,orange,yellow);
+	width:100vw;
+	height:100vh;
 }
 
 .busBody {
 	position: absolute;
 	top: 70px;
 	left:100px;
-	height: 550px;
+	height: 480px;
 	width: 1350px;
-	border-radius:50px;
-	clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
+	border-radius:100px 0px 0px 0px;
+	// clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	background-color:cornflowerblue;
 }
 
@@ -21,7 +27,7 @@
 	border: 15px solid black;
 	height: 100px;
 	width: 100px;
-	top: 580px;
+
 }
 
 .rim {
@@ -29,9 +35,10 @@
 	border-radius: 50%;
 	height: 78px;
 	width: 78px;
-	top: 599px;
+
 	position:absolute;
 }
+
 
 .backTyre {
 	position:absolute;
@@ -47,19 +54,19 @@
 
 .frontGlass{
 	position: absolute;
-	top: 70px;
-	left: 146px;
-	height: 250px;
-	width: 60px;
+	top: 85px;
+	left: -3px;
+	height: 149px;
+	width: 36px;
 	background-color: lightblue;
 	border-radius: 5px;
 	border: 1px solid black;
-	clip-path: polygon(65% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .mainDoor {
 	position:absolute;
-	top: 280px;
+	top: 135px;
 	left:500px;
 	height:329px;
 	width:183px;
@@ -77,14 +84,13 @@
 	 border-radius: 10px;
 	background-color:lightblue;
 }
-
 .roof {
 	position: absolute;
 	border-radius: 50% 50% 0 0;
-	top: 40px;
+	top: -27px;
 	height: 20px;
-	left: 186px;
-	width: 1220px;
+	left: 116px;
+	width: 1225px;
 
 	background-color: whitesmoke;
 	border: 5px solid black;
@@ -92,10 +98,10 @@
 
 .luggageDoorFrame {
 	position:absolute;
-	top: 430px;
-	left:730px;
-	height:110px;
-	width:260px;
+	top: 354px;
+	left:753px;
+	height:95px;
+	width:226px;
 	border-radius: 10px;
 	border: 3px solid black;
 	background-color:lightblue;
@@ -103,11 +109,11 @@
 
 .luggageDoor {
 	position:absolute;
-	top: 435px;
+	top: 332px;
 	left:740px;
-	height:100px;
+	height:120px;
 	width:240px;
 	border-radius: 10px;
-	border: 2px solid black;
+	border: 10px solid black;
 	background-color:lightblue;
 }

@@ -3,11 +3,12 @@ import { React } from 'react';
 import Circle from './Circle';
 
 const tyreCount = 2;
-const multiplier = 700;
-const margin = 360;
+const multiplier = 771;
+const margin = 289;
 
 const outerTyres = range(0, tyreCount).map((number) => ({
 	left: (number * multiplier) + margin,
+	top: 437,
 }));
 
 const TyreExterior = () =>

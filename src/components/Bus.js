@@ -1,18 +1,18 @@
 import { React } from 'react';
-import BusBody from './BusBody';
 import Tyre from './Tyre';
 import Door from './Door';
 import Windows from './Windows';
 import Roof from './Roof';
-import Glasses from './Glasses';
+import FrontGlass from './FrontGlass';
+import Compartment from './Compartments';
 
-const Bus = (context) => <div>
-	<BusBody { ...context }/>
+const Bus = () => <div className="busBody">
 	<Tyre/>
 	<Door/>
-	<Glasses/>
+	<FrontGlass/>
 	<Windows/>
 	<Roof/>
+	<Compartment/>
 </div>;
 
 export default Bus;

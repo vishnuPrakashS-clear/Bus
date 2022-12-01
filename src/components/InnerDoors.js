@@ -8,9 +8,9 @@ const margin = 510;
 
 const innerDoors = range(0, doorCount).map((number) => ({
 	left: (number * multiplier) + margin,
-	height: 315,
+	height: 298,
 	width: 78,
-	top: 285,
+	top: 154,
 }));
 
 const InnerDoors = () =>
