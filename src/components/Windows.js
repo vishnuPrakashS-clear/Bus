@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import WindowStyle from './WindowStyle';
+import Square from './Square';
 
 const windowCount = 3;
 const multiplier = 230;
@@ -14,6 +14,6 @@ const windows = range(0, windowCount).map((number) => ({
 
 const Windows = () =>
 	windows.map((window, index) =>
-		<WindowStyle key={ index } { ...window }/>);
+		<Square key={ index } { ...window }/>);
 
 export default Windows;

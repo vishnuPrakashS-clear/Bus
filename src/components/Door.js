@@ -1,9 +1,10 @@
 import { React } from 'react';
 import InnerDoors from './InnerDoors';
+import MainDoor from './MainDoor';
 
-const Doors = () => <div>
-	<div className="mainDoor"/>
+const Door = () => <div>
+	<MainDoor/>
 	<InnerDoors/>
 </div>;
 
-export default Doors;
+export default Door;

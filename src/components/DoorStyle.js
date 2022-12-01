@@ -9,7 +9,7 @@ const DoorStyle = ({ height, width, left, top }) =>
 			left: `${ left }px`,
 			top: `${ top }px`,
 		} }
-		className="leftGlass"
+		className="doorStyle"
 	/>;
 
 export default DoorStyle;

@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import TyreStyle from './TyreStyle';
+import Circle from './Circle';
 
 const tyreCount = 2;
 const multiplier = 700;
@@ -8,13 +8,11 @@ const margin = 360;
 
 const outerTyres = range(0, tyreCount).map((number) => ({
 	left: (number * multiplier) + margin,
-	size: 100,
-	top: 580,
 }));
 
 const TyreExterior = () =>
 	outerTyres.map((outerTyre, index) =>
-		<TyreStyle
+		<Circle
 			key={ index }
 			{ ...{ ...outerTyre,
 				style: 'tyre' } }

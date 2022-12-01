@@ -19,11 +19,18 @@
 	border-radius: 50%;
 	background-color: wheat;
 	border: 15px solid black;
+	height: 100px;
+	width: 100px;
+	top: 580px;
 }
 
 .rim {
 	border: 5px dashed black;
 	border-radius: 50%;
+	height: 78px;
+	width: 78px;
+	top: 599px;
+	position:absolute;
 }
 
 .backTyre {
@@ -60,7 +67,7 @@
 	background-color:black;
 }
 
-.leftGlass {
+.doorStyle {
 	border-radius: 10px;
 	background-color:lightblue;
 }
