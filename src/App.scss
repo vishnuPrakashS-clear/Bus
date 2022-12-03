@@ -3,7 +3,7 @@
 }
 
 
-.bus {
+.background {
 	background-image: linear-gradient(yellowGreen,orange,yellow);
 	width:100vw;
 	height:100vh;
@@ -11,12 +11,7 @@
 
 .busBody {
 	position: absolute;
-	top: 70px;
-	left:100px;
-	height: 480px;
-	width: 1350px;
 	border-radius:100px 0px 0px 0px;
-	// clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	background-color:cornflowerblue;
 }
 
@@ -89,19 +84,14 @@
 	border-radius: 50% 50% 0 0;
 	top: -27px;
 	height: 20px;
-	left: 116px;
+	left: 93px;
 	width: 1225px;
-
 	background-color: whitesmoke;
 	border: 5px solid black;
 }
 
 .luggageDoorFrame {
 	position:absolute;
-	top: 354px;
-	left:753px;
-	height:95px;
-	width:226px;
 	border-radius: 10px;
 	border: 3px solid black;
 	background-color:lightblue;
@@ -109,10 +99,6 @@
 
 .luggageDoor {
 	position:absolute;
-	top: 332px;
-	left:740px;
-	height:120px;
-	width:240px;
 	border-radius: 10px;
 	border: 10px solid black;
 	background-color:lightblue;

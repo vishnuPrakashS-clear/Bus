@@ -6,13 +6,26 @@ import Roof from './Roof';
 import FrontGlass from './FrontGlass';
 import Compartment from './Compartments';
 
-const Bus = () => <div className="busBody">
-	<Tyre/>
-	<Door/>
-	<FrontGlass/>
-	<Windows/>
-	<Roof/>
-	<Compartment/>
-</div>;
+const style = (context) => {
+	const { config: { dimension: { busBody: { top, left,
+		height, width }}}} = context;
+
+	return {
+		top: `${ top }px`,
+		left: `${ left }px`,
+		height: `${ height }px`,
+		width: `${ width }px`,
+		position: 'absolute',
+	};
+};
+const Bus = (context) =>
+	<div className="busBody" style={ style(context) }>
+		<Tyre { ...context }/>
+		<Door/>
+		<FrontGlass/>
+		<Windows/>
+		<Roof/>
+		<Compartment { ...context }/>
+	</div>;
 
 export default Bus;
