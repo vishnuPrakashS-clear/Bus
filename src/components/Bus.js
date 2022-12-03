@@ -22,9 +22,9 @@ const Bus = (context) =>
 	<div className="busBody" style={ style(context) }>
 		<Tyre { ...context }/>
 		<Door/>
-		<FrontGlass/>
+		<FrontGlass { ...context }/>
 		<Windows/>
-		<Roof/>
+		<Roof { ...context }/>
 		<Compartment { ...context }/>
 	</div>;
 
