@@ -1,8 +1,8 @@
 import { React } from 'react';
 
-const MainDoor = ({ dimension }) => {
-	const { mainDoor: { top, left,
-		width, height }} = dimension;
+const MainDoor = ({ config }) => {
+	const { dimension: { mainDoor: { top, left,
+		width, height }}} = config;
 
 	return (
 		<div

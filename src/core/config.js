@@ -9,6 +9,10 @@ const intTyreCount = 2;
 const intMultiplier = 771;
 const intMargin = 309;
 
+const doorCount = 2;
+const multiplier = 85;
+const margin = 510;
+
 const colors = ['firebrick', 'CrimsonRed', 'yellow'];
 const config = {
 
@@ -68,6 +72,13 @@ const config = {
 			left: (number * intMultiplier) + intMargin,
 			top: 456,
 			height: 78,
+			width: 78,
+		})),
+
+		innerDoors: range(0, doorCount).map((number) => ({
+			left: (number * multiplier) + margin,
+			top: 154,
+			height: 298,
 			width: 78,
 		})),
 	},

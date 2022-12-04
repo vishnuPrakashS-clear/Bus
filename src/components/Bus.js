@@ -1,10 +1,10 @@
 import { React } from 'react';
-import Tyre from './Tyre';
-import Door from './Door';
-import Windows from './Windows';
-import Roof from './Roof';
-import FrontGlass from './FrontGlass';
-import Compartment from './Compartments';
+import Tyre from './Tyres/Tyre';
+import Door from './Doors/Door';
+import Windows from './Windows/Windows';
+import Roof from './ExtraFittings/Roof';
+import FrontGlass from './ExtraFittings/FrontGlass';
+import Compartment from './ExtraFittings/Compartments';
 
 const style = (context) => {
 	const { config: { dimension: { busBody: { top, left,
