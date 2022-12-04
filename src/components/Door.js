@@ -2,8 +2,8 @@ import { React } from 'react';
 import InnerDoors from './InnerDoors';
 import MainDoor from './MainDoor';
 
-const Door = () => <div>
-	<MainDoor/>
+const Door = ({ config }) => <div>
+	<MainDoor { ...config }/>
 	<InnerDoors/>
 </div>;
 

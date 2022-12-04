@@ -1,12 +1,12 @@
 import { React } from 'react';
 
-const LuggageDoorFrame = ({ dimension }) => {
-	const { luggageDoorFrame: { top, left,
+const LuggageDoorHandle = ({ dimension }) => {
+	const { luggageDoorHandle: { top, left,
 		width, height }} = dimension;
 
 	return (
 		<div
-			className="luggageDoorFrame"
+			className="luggageDoorHandle"
 			style={ {
 				top: `${ top }px`,
 				left: `${ left }px`,
@@ -17,4 +17,4 @@ const LuggageDoorFrame = ({ dimension }) => {
 	);
 };
 
-export default LuggageDoorFrame;
+export default LuggageDoorHandle;

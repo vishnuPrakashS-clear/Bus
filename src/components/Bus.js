@@ -8,7 +8,7 @@ import Compartment from './Compartments';
 
 const style = (context) => {
 	const { config: { dimension: { busBody: { top, left,
-		height, width }}}} = context;
+		height, width, busBodyColor }}}} = context;
 
 	return {
 		top: `${ top }px`,
@@ -16,12 +16,13 @@ const style = (context) => {
 		height: `${ height }px`,
 		width: `${ width }px`,
 		position: 'absolute',
+		backgroundColor: busBodyColor,
 	};
 };
 const Bus = (context) =>
 	<div className="busBody" style={ style(context) }>
 		<Tyre { ...context }/>
-		<Door/>
+		<Door { ...context }/>
 		<FrontGlass { ...context }/>
 		<Windows/>
 		<Roof { ...context }/>

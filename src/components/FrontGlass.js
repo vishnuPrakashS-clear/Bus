@@ -6,7 +6,7 @@ const FrontGlass = ({ config }) => {
 
 	return (
 		<div
-			className="luggageDoorFrame"
+			className="frontGlass"
 			style={ {
 				top: `${ top }px`,
 				left: `${ left }px`,
