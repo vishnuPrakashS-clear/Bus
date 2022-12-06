@@ -1,8 +1,8 @@
 import { React } from 'react';
 
-const LuggageDoorHandle = ({ dimension }) => {
-	const { luggageDoorHandle: { top, left,
-		width, height }} = dimension;
+const LuggageDoorHandle = (context) => {
+	const { dimensions: { luggageDoorHandle: { top, left,
+		width, height, border }}} = context;
 
 	return (
 		<div
@@ -12,6 +12,7 @@ const LuggageDoorHandle = ({ dimension }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>
 	);

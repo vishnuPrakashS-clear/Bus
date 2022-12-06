@@ -1,13 +1,13 @@
 import { React } from 'react';
 
-const Square = ({ size, left, top }) =>
+const Square = ({ data }) =>
 	<div
 		style={ {
 			position: 'absolute',
-			width: `${ size }px`,
-			height: `${ size }px`,
-			left: `${ left }px`,
-			top: `${ top }px`,
+			width: `${ data.width }px`,
+			height: `${ data.height }px`,
+			left: `${ data.left }px`,
+			top: `${ data.top }px`,
 		} }
 		className="window"
 	/>;

@@ -7,8 +7,8 @@ import FrontGlass from './ExtraFittings/FrontGlass';
 import Compartment from './ExtraFittings/Compartments';
 
 const style = (context) => {
-	const { config: { dimension: { busBody: { top, left,
-		height, width, busBodyColor }}}} = context;
+	const { dimensions: { busBody: { top, left,
+		height, width, busBodyColor, borderRadius }}} = context;
 
 	return {
 		top: `${ top }px`,
@@ -16,6 +16,10 @@ const style = (context) => {
 		height: `${ height }px`,
 		width: `${ width }px`,
 		position: 'absolute',
+		borderTopLeftRadius: `${ borderRadius.topLeft }px`,
+		borderTopRightRadius: `${ borderRadius.topRight }px`,
+		borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
+		borderBottomRightRadius: `${ borderRadius.bottomRight }px`,
 		backgroundColor: busBodyColor,
 	};
 };
@@ -24,7 +28,7 @@ const Bus = (context) =>
 		<Tyre { ...context }/>
 		<Door { ...context }/>
 		<FrontGlass { ...context }/>
-		<Windows/>
+		<Windows { ...context }/>
 		<Roof { ...context }/>
 		<Compartment { ...context }/>
 	</div>;

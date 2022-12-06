@@ -1,8 +1,8 @@
 import { React } from 'react';
 
-const FrontGlass = ({ config }) => {
-	const { dimension: { frontGlass: { top, left,
-		width, height }}} = config;
+const FrontGlass = (context) => {
+	const { dimensions: { frontGlass: { top, left,
+		width, height, borderRadius }}} = context;
 
 	return (
 		<div
@@ -12,6 +12,10 @@ const FrontGlass = ({ config }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				borderTopLeftRadius: `${ borderRadius.topLeft }px`,
+				borderTopRightRadius: `${ borderRadius.topRight }px`,
+				borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
+				borderBottomRightRadius: `${ borderRadius. bottomRight }px`,
 			} }
 		/>
 	);

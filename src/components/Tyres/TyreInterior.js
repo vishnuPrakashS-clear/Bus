@@ -1,12 +1,12 @@
 import { React } from 'react';
 import Circle from './Circle';
 
-const TyreInteriors = ({ dimension }) =>
-	dimension.tyreInteriors.map((TyreInterior, index) =>
+const TyreInteriors = (context) =>
+	context.dimensions.innerTyre.map((tyre, index) =>
 		<Circle
 			key={ index }
-			{ ...{ ...TyreInterior,
-				style: 'rim' } }
+			{ ...{ ...tyre,
+				style: 'rim', border: `${ tyre.border }px dashed black` } }
 		/>);
 
 export default TyreInteriors;
