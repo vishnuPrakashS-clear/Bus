@@ -16,6 +16,22 @@
 
 .rim {
 	position:absolute;
+	animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+	from {transform: rotate(360deg)}
+	to {transform: rotate(0deg)}
+}
+
+@keyframes moveBus {
+	from {transform: translate(0px,0px)scaleX(-1)}
+	to {transform: translate(100px,0px)scaleX(-1)}
+}
+
+@keyframes moveRtl {
+	from {transform: translate(100px,0px)}
+	to {transform: translate(0px,0px)}
 }
 
 .frontGlass{

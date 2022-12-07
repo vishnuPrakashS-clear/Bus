@@ -20,12 +20,14 @@ const windowMargin = 740;
 
 const colors = ['firebrick', 'teal', 'navy'];
 
-const getBusBody = (size) => ({
-	top: 70 * size,
-	left: 100 * size,
+const getBusBody = ({ size, x, y, direction, animation }) => ({
+	top: (70 * size) + y,
+	left: (100 * size) + x,
 	height: 480 * size,
 	width: 1350 * size,
 	busBodyColor: rndValue(colors),
+	transform: direction,
+	animation: animation,
 	borderRadius: {
 		topLeft: 100 * size,
 		topRight: 50 * size,
@@ -34,7 +36,7 @@ const getBusBody = (size) => ({
 	},
 });
 
-const getRoof = (size) => ({
+const getRoof = ({ size }) => ({
 	top: -27 * size,
 	left: 100 * size,
 	width: 1200 * size,
@@ -48,20 +50,20 @@ const getRoof = (size) => ({
 	border: 5 * size,
 });
 
-const getFrontGlass = (size) => ({
+const getFrontGlass = ({ size }) => ({
 	top: 0,
 	left: 0,
 	height: 208 * size,
 	width: 97 * size,
 	borderRadius: {
-		topLeft: 100,
-		topRight: 50,
+		topLeft: 100 * size,
+		topRight: 50 * size,
 		bottomLeft: 0,
 		bottomRight: 0,
 	},
 });
 
-const getMainDoor = (size) => ({
+const getMainDoor = ({ size }) => ({
 	top: 135 * size,
 	left: 500 * size,
 	height: 329 * size,
@@ -69,7 +71,7 @@ const getMainDoor = (size) => ({
 	borderRadius: 10 * size,
 });
 
-const getTyreExteriors = (size) => range(0, extTyreCount).map((number) => ({
+const getTyreExteriors = ({ size }) => range(0, extTyreCount).map((number) => ({
 	left: ((number * extMultiplier) + extMargin) * size,
 	top: 437 * size,
 	height: 100 * size,
@@ -78,7 +80,7 @@ const getTyreExteriors = (size) => range(0, extTyreCount).map((number) => ({
 	border: 10 * size,
 }));
 
-const getTyreInteriors = (size) => range(0, intTyreCount).map((number) => ({
+const getTyreInteriors = ({ size }) => range(0, intTyreCount).map((number) => ({
 	left: ((number * intMultiplier) + intMargin) * size,
 	top: 453 * size,
 	height: 78 * size,
@@ -87,7 +89,7 @@ const getTyreInteriors = (size) => range(0, intTyreCount).map((number) => ({
 	border: 5 * size,
 }));
 
-const getLuggageDoorHandle = (size) => ({
+const getLuggageDoorHandle = ({ size }) => ({
 	top: 430 * size,
 	left: 840 * size,
 	height: 4 * size,
@@ -95,7 +97,7 @@ const getLuggageDoorHandle = (size) => ({
 	border: 5 * size,
 });
 
-const getLuggageDoor = (size) => ({
+const getLuggageDoor = ({ size }) => ({
 	top: 332 * size,
 	left: 740 * size,
 	height: 120 * size,
@@ -104,7 +106,7 @@ const getLuggageDoor = (size) => ({
 	border: 10 * size,
 });
 
-const getWindows = (size) =>
+const getWindows = ({ size }) =>
 	range(0, windowCount).map((number) => ({
 		left: ((number * windowMultiplier) + windowMargin) * size,
 		width: 130 * size,
@@ -112,7 +114,7 @@ const getWindows = (size) =>
 		top: 30 * size,
 	}));
 
-const getInnerDoor = (size) =>
+const getInnerDoor = ({ size }) =>
 	range(0, doorCount).map((number) => ({
 		left: ((number * doorMultiplier) + doorMargin) * size,
 		top: 154 * size,
@@ -121,18 +123,18 @@ const getInnerDoor = (size) =>
 		borderRadius: 10 * size,
 	}));
 
-const Dimensions = (size) => ({
-	busBody: getBusBody(size),
-	roof: getRoof(size),
-	frontGlass: getFrontGlass(size),
-	outerTyre: getTyreExteriors(size),
-	innerTyre: getTyreInteriors(size),
-	luggageDoorHandle: getLuggageDoorHandle(size),
-	luggageDoor: getLuggageDoor(size),
-	windows: getWindows(size),
-	innerDoor: getInnerDoor(size),
-	outerDoor: getMainDoor(size),
+const getBusDimensions = (data) => ({
+	busBody: getBusBody(data),
+	roof: getRoof(data),
+	frontGlass: getFrontGlass(data),
+	outerTyre: getTyreExteriors(data),
+	innerTyre: getTyreInteriors(data),
+	luggageDoorHandle: getLuggageDoorHandle(data),
+	luggageDoor: getLuggageDoor(data),
+	windows: getWindows(data),
+	innerDoor: getInnerDoor(data),
+	outerDoor: getMainDoor(data),
 
 });
 
-export default Dimensions;
+export default getBusDimensions;
