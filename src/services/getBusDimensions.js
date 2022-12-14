@@ -20,6 +20,12 @@ const windowMargin = 740;
 
 const colors = ['firebrick', 'teal', 'navy'];
 
+const images = [
+	'/image/images.jpg',
+	'/image/passenger1.png',
+	'/image/passenger2.jpeg',
+];
+
 const getBusBody = ({ size, x, y, direction, animation }) => ({
 	top: (70 * size) + y,
 	left: (100 * size) + x,
@@ -112,6 +118,7 @@ const getWindows = ({ size }) =>
 		width: 130 * size,
 		height: 130 * size,
 		top: 30 * size,
+		backgroundImage: images[number],
 	}));
 
 const getInnerDoor = ({ size }) =>

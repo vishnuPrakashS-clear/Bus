@@ -8,6 +8,7 @@ const Square = ({ data }) =>
 			height: `${ data.height }px`,
 			left: `${ data.left }px`,
 			top: `${ data.top }px`,
+			backgroundImage: `url(${ process.env.PUBLIC_URL + data.backgroundImage })`,
 		} }
 		className="window"
 	/>;
