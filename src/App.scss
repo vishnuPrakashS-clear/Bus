@@ -50,6 +50,9 @@
 
 .window {
 	background-color:lightblue;
+	background-image: url(./image/images.jpg);
+	background-size: cover;
+	transform: translate(0,0) scaleX(-1);
 }
 .roof {
 	position: absolute;
